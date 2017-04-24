@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>The AJAXson 5</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="request-gif.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1>The AJAXson 5</h1>
+
+        <form id ="check-if-bot" />
+            <label>Prove you are not a robot by answering this riddle:</label>
+            <p>How many Jacksons are better than 1?</p>
+            <input id = "riddle_answer" type = "text"/>
+
+        </form>
+
+        <form id="form-gif-request" />
+            <label <span class = "label label-danger">What kind of Jackson 5 related gif do you want?</span></label>
+            <input id = "special_criteria" name="tag" type="text"/>
+            <input type="submit" value="Get my Gif!" />
+            
+
+        </form>
+
+        <label id = "test_error"></label>
+
+
+        <img id="gif" src=""/>
+        <p id="feedback" hidden="true"></p>
+        <div id='loadingmessage' hidden = "true">
+            <p>Loading...</p>
+    </div>
+    </div>
+</body>
+</html>
